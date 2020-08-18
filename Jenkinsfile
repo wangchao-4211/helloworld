@@ -12,5 +12,10 @@ pipeline {
         writeFile(file: 'redss', text: 'fgfggfv')
       }
     }
+    stage('report') {
+      steps {
+        junit 'testreport'
+      }
+    }
   }
 }
