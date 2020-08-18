@@ -7,5 +7,10 @@ pipeline {
         echo 'Hello world!'
       }
     }
+    stage('test') {
+      steps {
+        writeFile(file: 'redss', text: 'fgfggfv')
+      }
+    }
   }
 }
