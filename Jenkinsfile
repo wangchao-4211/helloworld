@@ -1,10 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'zxc'
-        input(message: 'aaa', id: '1', ok: 'adfc', submitter: '1', submitterParameter: '1')
+        lock(resource: '1', inversePrecedence: true, label: '1', quantity: 1, variable: '1')
       }
     }
   }
