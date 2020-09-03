@@ -1,20 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Stage 1') {
-      agent any
+    stage('') {
       steps {
-        echo 'Hello world!'
-      }
-    }
-    stage('test') {
-      steps {
-        writeFile(file: 'redss', text: 'fgfggfv')
-      }
-    }
-    stage('report') {
-      steps {
-        junit 'testreport'
+        sh 'zxc'
+        input(message: 'aaa', id: '1', ok: 'adfc', submitter: '1', submitterParameter: '1')
       }
     }
   }
