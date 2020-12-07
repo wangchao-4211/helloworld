@@ -6,10 +6,8 @@ pipeline {
 
   }
   stages {
-    stage('Stage 1') {
-      agent any
+    stage('a') {
       steps {
-        echo 'Hello world!'
         sh 'mvn -version'
       }
     }
