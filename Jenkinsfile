@@ -6,9 +6,18 @@ pipeline {
 
   }
   stages {
-    stage('a') {
-      steps {
-        sh 'mvn -version'
+    stage('a333') {
+      parallel {
+        stage('a333666') {
+          steps {
+            sh 'mvn -version'
+          }
+        }
+        stage('666') {
+          steps {
+            sh '666'
+          }
+        }
       }
     }
   }
