@@ -20,5 +20,10 @@ pipeline {
         }
       }
     }
+    stage('222') {
+      steps {
+        sh '12121'
+      }
+    }
   }
 }
