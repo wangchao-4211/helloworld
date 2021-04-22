@@ -6,5 +6,11 @@ pipeline {
         lock(resource: '1', inversePrecedence: true, label: '1', quantity: 1, variable: '1')
       }
     }
+    stage('shell') {
+      steps {
+        sh '''sh pwd
+sh pwd'''
+      }
+    }
   }
 }
