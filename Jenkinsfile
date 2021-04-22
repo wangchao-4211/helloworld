@@ -8,8 +8,8 @@ pipeline {
     }
     stage('shell') {
       steps {
-        sh '''sh pwd
-sh pwd'''
+        sh '''pwd
+pwd'''
       }
     }
   }
