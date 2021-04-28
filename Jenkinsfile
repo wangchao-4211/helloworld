@@ -16,6 +16,11 @@ pipeline {
         stage('666') {
           steps {
             sh '666'
+            sleep 1
+            dir(path: 'aa') {
+              sleep 1
+            }
+
           }
         }
       }
