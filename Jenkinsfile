@@ -11,6 +11,7 @@ pipeline {
         stage('a333666') {
           steps {
             sh 'mvn -version'
+            sh 'xcfxcf'
           }
         }
         stage('666') {
