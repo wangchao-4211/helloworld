@@ -12,6 +12,7 @@ pipeline {
           steps {
             sh 'mvn -version'
             sh 'xcfxcf'
+            build 'dasd'
           }
         }
         stage('666') {
