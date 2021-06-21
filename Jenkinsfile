@@ -1,35 +1,20 @@
 pipeline {
   agent {
     docker {
-      image 'maven:3.3.9-alpine'
+      image 'harbor.jiayuntong.com/cloudplant/dotnet:v1.0'
     }
 
   }
   stages {
-    stage('a333') {
-      parallel {
-        stage('a333666') {
-          steps {
-            sh 'mvn -version'
-            sh 'xcfxcf'
-            build 'dasd'
-          }
+    stage('dotnet') {
+      agent {
+        docker {
+          image 'harbor.jiayuntong.com/cloudplant/dotnet:v1.0'
         }
-        stage('666') {
-          steps {
-            sh '666'
-            sleep 1
-            dir(path: 'aa') {
-              sleep 1
-            }
 
-          }
-        }
       }
-    }
-    stage('222') {
       steps {
-        sh '12121'
+        sh 'dotnet --version'
       }
     }
   }
