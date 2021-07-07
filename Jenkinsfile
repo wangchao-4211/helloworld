@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('shell') {
       steps {
-        sh 'mvn -v'
+        sh '${python} --version'
       }
     }
   }
